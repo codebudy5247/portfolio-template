@@ -38,7 +38,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{backgroundColor:'white',color:'black'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -109,7 +109,7 @@ const ResponsiveAppBar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '',
               textDecoration: 'none',
             }}
           >
@@ -128,21 +128,21 @@ const ResponsiveAppBar = () => {
             <Button
                 // key={page}
                 onClick={ () => navigate('/') }
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 Home
               </Button>
               <Button
                 // key={page}
                 onClick={ () => navigate('/services') }
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 Services
               </Button>
               <Button
                 // key={page}
                 onClick={ () => navigate('/about') }
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 About
               </Button>
